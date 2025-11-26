@@ -1,0 +1,12 @@
+{
+  "name": "iotylanding",
+  "version": "1.0.0",
+  "description": "Landing page for Ioty.ro",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build needed'"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}

@@ -1,0 +1,388 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* ================================
+   CONTAINER GENERAL HERO DESKTOP
+   (canvas 1920 x 1080 ca în Photoshop)
+   ================================ */
+.hero-desktop {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* ================================
+   1) BACKGROUND IMAGE DESKTOP
+   ================================ */
+.hero-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  background-image: url("assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ================================
+   2) LOGO (SVG)
+   ================================ */
+.logo {
+  position: absolute;
+  top: 10px;   /* Y */
+  left: 30px;  /* X */
+  width: 268px;
+  height: 102px;
+}
+
+.logo img {
+  width: 268px;
+  height: 102px;
+  display: block;
+}
+
+
+/* ================================
+   3) MENU (Povești de succes, Știri, Comunitate, Contactează-ne)
+   ================================ */
+.menu {
+  position: absolute;
+  top: 62px;    /* Y */
+  left: 653px;  /* X */
+  width: 614px;
+  height: 19px;
+  display: flex;
+  gap: 23px;    /* distanța între itemi */
+}
+
+/* item meniu */
+.menu a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;     /* SemiBold */
+  font-size: 21.39px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+
+  /* shadow: black, distance 3px, angle ~139°, size 6px, opacity 20% */
+  text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ================================
+   4) NEWSLETTER BOX (CARD ALB)
+   ================================ */
+.newsletter-card {
+  position: absolute;
+  top: 351px;   /* Y */
+  left: 634px;  /* X */
+  width: 519px;
+  height: 345px;
+  background: rgba(255, 255, 255, 0.90);  /* alb, opacity 90% */
+  border-radius: 22px;
+
+  /* shadow: black, multiply, opacity 20%, angle ~139°, distance 3px, size 6px */
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ================================
+   5) TITLU – "Abonează-te la newsletterul nostru"
+   ================================ */
+.title-newsletter {
+  position: absolute;
+  top: 394px;   /* Y */
+  left: 664px;  /* X */
+  width: 459px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;     /* Bold */
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+
+/* ================================
+   6) SUBHEADLINE – "Făcut de mâini reale..."
+   ================================ */
+.subheadline {
+  position: absolute;
+  top: 452px;   /* Y */
+  left: 634px;  /* X */
+  width: 519px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;     /* SemiBold */
+  font-size: 17.42px;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+/* ================================
+   7) PARAGRAF DESCRIPTIV
+   ================================ */
+.description {
+  position: absolute;
+  top: 477px;   /* Y */
+  left: 681px;  /* X */
+  width: 424px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;    /* Regular */
+  font-size: 13.47px;
+  color: #000000;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+/* ================================
+   8) LABEL ÎNTREBARE – "Care este specificul pasiunii tale?"
+   ================================ */
+.question-label {
+  position: absolute;
+  top: 550px;   /* Y */
+  left: 681px;  /* X */
+  width: 424px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;    /* Regular */
+  font-size: 11.4px;
+  color: #000000;
+  text-align: left;
+}
+
+
+/* ================================
+   9) DISCLAIMER – "Ne pasă de datele tale..."
+   ================================ */
+.disclaimer {
+  position: absolute;
+  top: 645px;   /* Y */
+  left: 664px;  /* X */
+  width: 457px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;    /* Regular */
+  font-size: 9.73px;
+  color: #000000;
+  line-height: 1.3;
+  text-align: center;
+}
+
+
+/* ================================
+   10) BUTON – "Sunt Creator"
+   ================================ */
+.btn-creator {
+  position: absolute;
+  top: 575px;   /* Y */
+  left: 698px;  /* X */
+  width: 179px;
+  height: 47px;
+  background-color: #000000;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-creator span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;     /* SemiBold */
+  font-size: 12px;
+  color: #ffffff;
+}
+
+
+/* ================================
+   11) BUTON – "Sunt Cumpărător"
+   ================================ */
+.btn-cumparator {
+  position: absolute;
+  top: 575px;   /* Y */
+  left: 909px;  /* X */
+  width: 179px;
+  height: 47px;
+  background-color: #e07515;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cumparator span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;     /* SemiBold */
+  font-size: 12px;
+  color: #ffffff;
+}
+
+
+/* ================================
+   MODAL STYLES
+   ================================ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 22px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 32px;
+  font-weight: 300;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#emailInput {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#emailInput:focus {
+  outline: none;
+  border-color: #ff7500;
+}
+
+#submitBtn {
+  width: 100%;
+  padding: 15px;
+  background-color: #e07515;
+  border: none;
+  border-radius: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submitBtn:hover {
+  background-color: #ff7500;
+  transform: translateY(-2px);
+}
+
+#submitBtn:active {
+  transform: translateY(0);
+}
+
+#submitBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#responseMessage {
+  display: none;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#responseMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#responseMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

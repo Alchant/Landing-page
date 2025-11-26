@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ioty.ro - În Construcție</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="hero-desktop">
+        <!-- Background Image -->
+        <div class="hero-background"></div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="assets/images/logo.svg" alt="Ioty.ro Logo">
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <a href="#">Povești de succes</a>
+            <a href="#">Știri</a>
+            <a href="#">Comunitate</a>
+            <a href="#">Contactează-ne</a>
+        </nav>
+
+        <!-- Newsletter Box -->
+        <div class="newsletter-card"></div>
+
+        <!-- Title -->
+        <h1 class="title-newsletter">Abonează-te la newsletterul nostru</h1>
+
+        <!-- Subheadline -->
+        <h2 class="subheadline">Făcut de mâini reale. Creat pentru suflete reale.</h2>
+
+        <!-- Description -->
+        <p class="description">
+            Un marketplace curat și atent selectat, dedicat meșteșugarilor autentici din Europa de Est. 
+            Fiecare obiect spune o poveste, iar fiecare cumpărător sprijină un creator real.
+        </p>
+
+        <!-- Question Label -->
+        <p class="question-label">Care este specificul pasiunii tale?</p>
+
+        <!-- Buttons -->
+        <button class="btn-creator" data-list="creator">
+            <span>Sunt Creator</span>
+        </button>
+        <button class="btn-cumparator" data-list="buyer">
+            <span>Sunt Cumpărător</span>
+        </button>
+
+        <!-- Disclaimer -->
+        <p class="disclaimer">
+            Ne pasă de datele tale conform politicii noastre de confidențialitate. 
+            Te poți dezabona oricând.
+        </p>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Abonează-te</h2>
+            <p id="modalDescription">Introdu adresa ta de email pentru a continua</p>
+            <form id="emailForm">
+                <input type="email" id="emailInput" placeholder="Adresa de email" required>
+                <button type="submit" id="submitBtn">Trimite</button>
+            </form>
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+</body>
+</html>
