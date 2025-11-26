@@ -102,7 +102,8 @@ async function addContactToSendGrid(email, listType) {
             },
             body: JSON.stringify({
                 email: email,
-                listId: listId
+                listId: listId,
+                listType: listType
             })
         });
         
